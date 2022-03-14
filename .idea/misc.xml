@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="B2CCommerceCartridgesRoots">
+    <option name="cartridgesRoots">
+      <map>
+        <entry key="app_movies" value="$PROJECT_DIR$/cartridges/app_movies" />
+        <entry key="app_storefront_base" value="$PROJECT_DIR$/cartridges/app_storefront_base" />
+        <entry key="bm_app_storefront_base" value="$PROJECT_DIR$/cartridges/bm_app_storefront_base" />
+      </map>
+    </option>
+  </component>
+  <component name="B2CCommerceGlobalModules">
+    <option name="globalModulesRoots">
+      <map>
+        <entry key="modules" value="$PROJECT_DIR$/cartridges/modules" />
+      </map>
+    </option>
+  </component>
+  <component name="IntellijSFCCDeploymentSettings">
+    <option name="json" value="{&#10;  &quot;isFullCodeVersionCleanup&quot;: false,&#10;  &quot;tasks&quot;: [],&#10;  &quot;isWebDavActionAllowed&quot;: true&#10;}" />
+  </component>
+  <component name="IntellijSFCCGeneralProjectSettings">
+    <option name="connectionsSourcePath" value="$PROJECT_DIR$/dw.json" />
+  </component>
+  <component name="WebPackConfiguration">
+    <option name="mode" value="DISABLED" />
+  </component>
+  <component name="accountSettings">
+    <option name="activeProfile" value="profile:default" />
+    <option name="activeRegion" value="eu-central-1" />
+    <option name="recentlyUsedProfiles">
+      <list>
+        <option value="profile:default" />
+      </list>
+    </option>
+    <option name="recentlyUsedRegions">
+      <list>
+        <option value="eu-central-1" />
+      </list>
+    </option>
+  </component>
+</project>
