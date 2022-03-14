@@ -1,0 +1,53 @@
+<!--- TEMPLATENAME: searchResultsNoDecorator.isml --->
+<isif condition="${pdict.reportingURLs && pdict.reportingURLs.length}">
+    <isinclude template="reporting/reportingUrls"/>
+</isif>
+
+<!--- Search Results Banner --->
+<isif condition="${pdict.productSearch.isCategorySearch}">
+    <div class="hero slant-down search-banner"
+    <!--- If no image, default is specified in search.scss > .search-banner --->
+    <isif condition="${pdict.productSearch.bannerImageUrl}">
+        style="background-image: url(${pdict.productSearch.bannerImageUrl;})"
+    </isif>
+    >
+    <h1 class="header page-title">
+        ${pdict.productSearch.category.name;}
+    </h1>
+    </div>
+    <iselse>
+        <isslot id="search-result-banner-m" description="Banner for search results" context="global"/>
+</isif>
+
+<div class="container search-results">
+    <div class="row search-nav">
+
+    </div>
+    <div class="row">
+
+    </div>
+
+    <isif condition="${true}">
+        <!--- Refinement bar --->
+        <div class="row">
+            <div class="refinement-bar col-md-3">
+            </div>
+
+            <div class="col-sm-12 col-md-9">
+                <!--- Selected filters bar --->
+                <div class="row filter-bar d-md-none">
+                </div>
+
+                <!--- Product Grid --->
+                <div class="row product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
+                    <isinclude template="search/productGrid"/>
+                </div>
+            </div>
+        </div>
+    </isif>
+</div>
+<!--- Content Grid --->
+<div class="tab-pane container" id="content-search-results-pane" role="tabpanel" aria-labelledby="articles-tab">
+    <div id="content-search-results" class="content-grid-header"></div>
+</div>
+

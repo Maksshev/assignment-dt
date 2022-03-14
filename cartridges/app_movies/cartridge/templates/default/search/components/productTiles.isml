@@ -1,0 +1,17 @@
+<!--- TEMPLATENAME: productTiles.isml --->
+<isscript>
+    pdict.display = {
+        swatches: false,
+        ratings: true
+    }
+</isscript>
+
+<isloop items="${pdict.productSearch.productIds}" var="product">
+    <isscript>
+        pdict.product = product;
+        pdict.urls = product.urls;
+    </isscript>
+    <div class="col-6 col-sm-4">
+        <isinclude template="product/gridTile"/>
+    </div>
+</isloop>
